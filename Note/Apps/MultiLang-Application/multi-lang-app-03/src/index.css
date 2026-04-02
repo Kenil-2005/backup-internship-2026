@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #406093;
+    --secondary-color: #4C8CE4;
+    --tertiary-color: #C9BEFF;
+    --quaternary-color: #FFDBFD;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    background-color: var(--tertiary-color);
+    min-height: 100vh;
+    max-width: 100%;
+    position: relative;
+}
+
+h1,
+h2 {
+    font-family: var(--heading);
+    font-weight: 500;
+    color: var(--text-h);
+}
+
+h1 {
+    font-size: 56px;
+    letter-spacing: -1.68px;
+    margin: 32px 0;
+
+    @media (max-width: 1024px) {
+        font-size: 36px;
+        margin: 20px 0;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: -0.24px;
+    margin: 0 0 8px;
+
+    @media (max-width: 1024px) {
+        font-size: 20px;
+    }
+}
+
+p {
+    margin: unset;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+
+a:hover {
+    color: inherit !important;
+    text-decoration: inherit !important;
+}

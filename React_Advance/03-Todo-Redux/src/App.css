@@ -1,0 +1,33 @@
+.todo-container {
+    width: 450px;
+    margin: auto;
+}
+
+.input-wrap {
+    width: 450px;
+    padding: 15px;
+    background-color: #8fb3d9;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.input-wrap button {
+    display: block;
+    margin: 0 auto;
+    outline:none;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-block-end: 10px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-block-start: 10px;
+    border: 1px solid #ccc;
+}

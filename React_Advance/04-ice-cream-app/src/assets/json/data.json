@@ -1,0 +1,218 @@
+{
+    "base": [
+        {
+            "id": 1,
+            "label": "Chocolate",
+            "image": "/images/chocolate.png",
+            "price": 50,
+            "description": "Rich and creamy chocolate flavor"
+        },
+        {
+            "id": 2,
+            "label": "Vanilla",
+            "image": "/images/vanilla.png",
+            "price": 40,
+            "description": "Classic smooth vanilla taste"
+        },
+        {
+            "id": 3,
+            "label": "Strawberry",
+            "image": "/images/strawberry.png",
+            "price": 45,
+            "description": "Fresh and fruity strawberry flavor"
+        },
+        {
+            "id": 4,
+            "label": "Mango",
+            "image": "/images/mango.png",
+            "price": 50,
+            "description": "Sweet tropical mango delight"
+        },
+        {
+            "id": 5,
+            "label": "Butterscotch",
+            "image": "/images/butterscotch.png",
+            "price": 55,
+            "description": "Crunchy caramelized butterscotch flavor"
+        },
+        {
+            "id": 6,
+            "label": "Black Currant",
+            "image": "/images/black_currant.png",
+            "price": 60,
+            "description": "Tangy and sweet berry flavor"
+        },
+        {
+            "id": 7,
+            "label": "Pista",
+            "image": "/images/pista.png",
+            "price": 60,
+            "description": "Nutty pistachio flavored ice cream"
+        },
+        {
+            "id": 8,
+            "label": "Kesar",
+            "image": "/images/kesar.png",
+            "price": 65,
+            "description": "Royal saffron infused flavor"
+        },
+        {
+            "id": 9,
+            "label": "Coffee",
+            "image": "/images/coffee.png",
+            "price": 55,
+            "description": "Smooth and bold coffee taste"
+        },
+        {
+            "id": 10,
+            "label": "Cookies & Cream",
+            "image": "/images/cookies_cream.png",
+            "price": 65,
+            "description": "Vanilla base with crunchy cookie bits"
+        },
+        {
+            "id": 11,
+            "label": "Mint Chocolate",
+            "image": "/images/mint_chocolate.png",
+            "price": 60,
+            "description": "Refreshing mint with chocolate chips"
+        },
+        {
+            "id": 12,
+            "label": "Blueberry",
+            "image": "/images/blueberry.png",
+            "price": 60,
+            "description": "Sweet and slightly tangy blueberry flavor"
+        },
+        {
+            "id": 13,
+            "label": "Caramel",
+            "image": "/images/caramel.png",
+            "price": 55,
+            "description": "Smooth buttery caramel flavor"
+        },
+        {
+            "id": 14,
+            "label": "Dark Chocolate",
+            "image": "/images/dark_chocolate.png",
+            "price": 70,
+            "description": "Intense and rich dark chocolate taste"
+        },
+         {
+            "id": 15,
+            "label": "Black Currant",
+            "image": "/images/black_currant.png",
+            "price": 60,
+            "description": "Tangy and sweet berry flavor"
+        }
+    ],
+    "topping": [
+        {
+            "id": 1,
+            "label": "Sprinkles",
+            "image": "/images/sprinkles.png",
+            "price": 10,
+            "description": "Colorful sugar sprinkles"
+        },
+        {
+            "id": 2,
+            "label": "Chocolate Chips",
+            "image": "/images/choco_chips.png",
+            "price": 15,
+            "description": "Crunchy chocolate chips"
+        },
+        {
+            "id": 3,
+            "label": "Nuts",
+            "image": "/images/nuts.png",
+            "price": 20,
+            "description": "Roasted mixed nuts"
+        },
+        {
+            "id": 4,
+            "label": "Caramel Syrup",
+            "image": "/images/caramel.png",
+            "price": 15,
+            "description": "Sweet and buttery caramel drizzle"
+        },
+        {
+            "id": 5,
+            "label": "Chocolate Syrup",
+            "image": "/images/chocolate_syrup.png",
+            "price": 15,
+            "description": "Rich chocolate sauce topping"
+        },
+        {
+            "id": 6,
+            "label": "Oreo Crumbs",
+            "image": "/images/oreo.png",
+            "price": 20,
+            "description": "Crushed Oreo cookie topping"
+        },
+        {
+            "id": 7,
+            "label": "Brownie Bites",
+            "image": "/images/brownie.png",
+            "price": 25,
+            "description": "Soft chocolate brownie chunks"
+        },
+        {
+            "id": 8,
+            "label": "Marshmallows",
+            "image": "/images/marshmallow.png",
+            "price": 15,
+            "description": "Soft and fluffy marshmallows"
+        },
+        {
+            "id": 9,
+            "label": "Dry Fruits",
+            "image": "/images/dry_fruit.png",
+            "price": 15,
+            "description": "Crispy chocolate balls"
+        },
+        {
+            "id": 10,
+            "label": "Fruit Chunks",
+            "image": "/images/fruits.png",
+            "price": 20,
+            "description": "Fresh mixed fruit pieces"
+        },
+        {
+            "id": 11,
+            "label": "Whipped Cream",
+            "image": "/images/whipped_cream.png",
+            "price": 10,
+            "description": "Light and creamy topping"
+        },
+        {
+            "id": 12,
+            "label": "Honey Drizzle",
+            "image": "/images/honey.png",
+            "price": 15,
+            "description": "Natural sweet honey topping"
+        }
+    ],
+    "type": [
+        {
+            "id": 1,
+            "label": "Cone",
+            "image": "/images/cone.png",
+            "price": 0,
+            "description": "Classic crispy cone"
+        },
+        {
+            "id": 2,
+            "label": "Cup",
+            "image": "/images/cup.png",
+            "price": 0,
+            "description": "Simple serving cup"
+        },
+        {
+            "id": 3,
+            "label": "Sundae",
+            "image": "/images/sundae.png",
+            "price": 30,
+            "description": "Deluxe sundae style"
+        }
+    ]
+}
