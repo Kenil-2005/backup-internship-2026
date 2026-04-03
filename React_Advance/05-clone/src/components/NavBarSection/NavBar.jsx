@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -13,27 +14,64 @@ const NavBar = () => {
                     </button>
                     <div className="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div className="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.html" className="nav-item nav-link active text-secondary">Home</a>
-                            <a href="about.html" className="nav-item nav-link">About</a>
-                            <a href="service.html" className="nav-item nav-link">Services</a>
-                            <a href="project.html" className="nav-item nav-link">Projects</a>
+                            <NavLink
+                                to="/home"
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
+                                to="/about"
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                            >
+                                About
+                            </NavLink>
+                            <NavLink
+                                to="/services"
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                            >
+                                Services
+                            </NavLink>
+                            <NavLink
+                                to="/projects"
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                            >
+                                Project
+                            </NavLink>
                             <div className="nav-item dropdown">
-                                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#!" onClick={(e) => e.preventDefault()} className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div className="dropdown-menu rounded">
-                                    <a href="blog.html" className="dropdown-item">Our Blog</a>
-                                    <a href="team.html" className="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" className="dropdown-item">Testimonial</a>
-                                    <a href="404.html" className="dropdown-item">404 Page</a>
+                                    <Link to="/blog" className="dropdown-item">
+                                        Our Blog
+                                    </Link>
+
+
+                                    <Link to="/team" className="dropdown-item">
+                                        Our Team
+                                    </Link>
+
+                                    <Link to="/testimonial" className="dropdown-item">
+                                        Testimonial
+                                    </Link>
+
+                                    <Link to="/404" className="dropdown-item">
+                                        404 Page
+                                    </Link>
                                 </div>
                             </div>
-                            <a href="contact.html" className="nav-item nav-link">Contact</a>
+                            <NavLink
+                                to="/contact"
+                                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                            >
+                                Contact
+                            </NavLink>
                         </div>
                     </div>
                     <div className="d-none d-xl-flex flex-shirink-0">
                         <div id="phone-tada" className="d-flex align-items-center justify-content-center me-4">
-                            <a href="" className="position-relative animated tada infinite">
-                                <i className="fa fa-phone-alt text-white fa-2x"></i>
-                                <div className="position-absolute" style="top: -7px; left: 20px;">
+                            <a href="#!" onClick={(e) => e.preventDefault()} className="position-relative animate__animated animate__tada animate__infinite">
+                                <i className="fa fa-phone-alt text-white fa-2x phone-icon"></i>
+                                <div className="position-absolute" style={{ top: "-7px", left: "20px", }}>
                                     <span><i className="fa fa-comment-dots text-secondary"></i></span>
                                 </div>
                             </a>
@@ -43,7 +81,7 @@ const NavBar = () => {
                             <span className="text-secondary">Call: + 0123 456 7890</span>
                         </div>
                         <div className="d-flex align-items-center justify-content-center ms-4 ">
-                            <a href="#"><i className="bi bi-search text-white fa-2x"></i> </a>
+                            <a href="#!" onClick={(e) => e.preventDefault()}><i className="bi bi-search text-white fa-2x"></i> </a>
                         </div>
                     </div>
                 </nav>

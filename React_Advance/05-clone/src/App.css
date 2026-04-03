@@ -6,3 +6,55 @@
     font-weight: 500px;
     color: #bababa;
 }
+
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar-link a span {
+    color: var(--bs-secondary);
+}
+
+.icon-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-wrap a {
+    margin-right: 10px;
+}
+
+#note {
+    width: 500px;
+    overflow: hidden;
+}
+
+#note small {
+    position: relative;
+    display: inline-block;
+    animation: mymove 7s infinite;
+    animation-timing-function: all;
+}
+
+@keyframes mymove {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 10px;
+    color: var(--bs-white);
+    font-size: 18px;
+    font-weight: 500 !important;
+    outline: none;
+}
+
+.phone-icon {
+    transform: rotate(90deg);
+}
