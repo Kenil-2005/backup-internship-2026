@@ -15,7 +15,7 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div className="navbar-nav ms-auto mx-xl-auto p-0">
                             <NavLink
-                                to="/home"
+                                to="/"
                                 className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
                             >
                                 Home

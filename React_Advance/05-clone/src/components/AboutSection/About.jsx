@@ -1,11 +1,14 @@
 import React from 'react'
+import FactCheck from '../FactSection/FactCheck';
+import AboutDetails from './AboutDetails';
 
 const About = () => {
-  return (
-    <div>
-
-    </div>
-  )
+    return (
+        <>
+            <FactCheck />
+            <AboutDetails />
+        </>
+    );
 }
 
-export default About
+export default About;

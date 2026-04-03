@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Style
@@ -20,8 +20,19 @@ import Team from './components/TeamSection/Team';
 import Testimonial from './components/TestimonialSection/Testimonial';
 import NotFoundPage from './components/404Section/NotFoundPage';
 import Footer from './components/FooterSection/Footer';
+import Hero from './components/HeroSection/Hero';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const App = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
+
     return (
         <div>
             <BrowserRouter>
