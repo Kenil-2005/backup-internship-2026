@@ -6,15 +6,15 @@ const AboutDetails = () => {
             <div className='container-fluid my-5 py-5 about-wrapper'>
                 <div className="container pt-5">
                     <div className="row g-5">
-                        <div className="col-lg-5 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                        <div className="col-lg-5 col-md-6 col-12" data-aos="fade-up" data-aos-delay="2000">
                             <div className="h-100 position-relative">
-                                <img src="img/about-1.jpg" className="img-fluid w-75 rounded" style={{ marginBottom: "25%" }}></img>
+                                <img src="img/about-1.jpg" className="img-fluid w-75 rounded animate__animated animate__fadeInTopLeft animate__delay-2s" style={{ marginBottom: "25%" }}></img>
                                 <div className="position-absolute w-75" style={{ top: "25%", left: "25%" }}>
-                                    <img src="img/about-2.jpg" className="img-fluid w-100 rounded" ></img>
+                                    <img src="img/about-2.jpg" className="img-fluid w-100 rounded  animate__animated animate__fadeInBottomRight animate__delay-2s" ></img>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-7 col-md-6 col-12 " data-aos="fade-up" data-aos-delay="100">
+                        <div className="col-lg-7 col-md-6 col-12 " data-aos="fade-up" data-aos-delay="300">
                             <h5 className='text-primary'>About Us</h5>
                             <h1 className="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
                             <p className='mb-4'>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Style
@@ -18,9 +18,8 @@ import Contact from './components/ContactSection/Contact';
 import Blog from './components/BlogSection/Blog';
 import Team from './components/TeamSection/Team';
 import Testimonial from './components/TestimonialSection/Testimonial';
-import NotFoundPage from './components/404Section/NotFoundPage';
+import NotFound from './components/404Section/NotFound';
 import Footer from './components/FooterSection/Footer';
-import Hero from './components/HeroSection/Hero';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -32,6 +31,18 @@ const App = () => {
             once: true,
         });
     }, []);
+
+    const [showBtn, setShowBtn] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setShowBtn(window.scrollY > 300);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
 
     return (
         <div>
@@ -47,9 +58,17 @@ const App = () => {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/team" element={<Team />} />
                     <Route path="/testimonial" element={<Testimonial />} />
-                    <Route path="/404" element={<NotFoundPage />} />
+                    <Route path="/404" element={<NotFound />} />
                 </Routes>
                 <Footer />
+                {showBtn && (
+                    <button
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        className="btn btn-secondary btn-square rounded-circle back-to-top"
+                    >
+                        <i className="fa fa-arrow-up text-white"></i>
+                    </button>
+                )}
             </BrowserRouter>
         </div>
     )

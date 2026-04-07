@@ -15,9 +15,9 @@ const BlogCard = ({ category, image, author, date, description, shareCount, comm
                             <p className="text-white px-2">Share<i className="fa fa-arrow-right ms-3"></i></p>
                         </div>
                         <div className="blog-icon-2">
-                            <a href="#!" className="btn me-1"><i className="fab fa-facebook-f text-white"></i></a>
-                            <a href="#!" className="btn me-1"><i className="fab fa-twitter text-white"></i></a>
-                            <a href="#!" className="btn me-1"><i className="fab fa-instagram text-white"></i></a>
+                            <a href="https://www.facebook.com/" className="me-1"><i className="fab fa-facebook-f text-white"></i></a>
+                            <a href="https://www.twitter.com/" className="me-1"><i className="fab fa-twitter text-white"></i></a>
+                            <a href="https://www.instagram.com/" className="me-1"><i className="fab fa-instagram text-white"></i></a>
                         </div>
                     </div>
                 </div>

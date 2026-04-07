@@ -6,9 +6,9 @@ const NavBar = () => {
         <div className="container-fluid bg-primary">
             <div className="container">
                 <nav className="navbar navbar-dark navbar-expand-lg py-0">
-                    <a href="index.html" className="navbar-brand">
+                    <Link to="/" className="navbar-brand">
                         <h1 className="text-white fw-bold d-block">High<span className="text-secondary">Tech</span> </h1>
-                    </a>
+                    </Link>
                     <button type="button" className="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -16,52 +16,72 @@ const NavBar = () => {
                         <div className="navbar-nav ms-auto mx-xl-auto p-0">
                             <NavLink
                                 to="/"
-                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                                end
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-white"}
                             >
                                 Home
                             </NavLink>
                             <NavLink
                                 to="/about"
-                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-white"}
                             >
                                 About
                             </NavLink>
                             <NavLink
                                 to="/services"
-                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-white"}
                             >
                                 Services
                             </NavLink>
                             <NavLink
                                 to="/projects"
-                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-secondary"}
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-white"}
                             >
                                 Project
                             </NavLink>
                             <div className="nav-item dropdown">
-                                <a href="#!" onClick={(e) => e.preventDefault()} className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#!" onClick={(e) => e.preventDefault()} className="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Pages</a>
                                 <div className="dropdown-menu rounded">
-                                    <Link to="/blog" className="dropdown-item">
+                                    <NavLink
+                                        to="/blog"
+                                        className={({ isActive }) =>
+                                            isActive ? "dropdown-item active" : "dropdown-item"
+                                        }
+                                    >
                                         Our Blog
-                                    </Link>
+                                    </NavLink>
 
-
-                                    <Link to="/team" className="dropdown-item">
+                                    <NavLink
+                                        to="/team"
+                                        className={({ isActive }) =>
+                                            isActive ? "dropdown-item active" : "dropdown-item"
+                                        }
+                                    >
                                         Our Team
-                                    </Link>
+                                    </NavLink>
 
-                                    <Link to="/testimonial" className="dropdown-item">
-                                        Testimonial
-                                    </Link>
+                                    <NavLink
+                                        to="/testimonial"
+                                        className={({ isActive }) =>
+                                            isActive ? "dropdown-item active" : "dropdown-item"
+                                        }
+                                    >
+                                        Our Testimonial
+                                    </NavLink>
 
-                                    <Link to="/404" className="dropdown-item">
+                                    <NavLink
+                                        to="/404"
+                                        className={({ isActive }) =>
+                                            isActive ? "dropdown-item active" : "dropdown-item"
+                                        }
+                                    >
                                         404 Page
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                             <NavLink
                                 to="/contact"
-                                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                                className={({ isActive }) => isActive ? "nav-item nav-link active text-secondary" : "nav-item nav-link text-white"}
                             >
                                 Contact
                             </NavLink>
@@ -78,7 +98,7 @@ const NavBar = () => {
                         </div>
                         <div className="d-flex flex-column pe-4 border-end">
                             <span className="text-white-50">Have any questions?</span>
-                            <span className="text-secondary">Call: + 0123 456 7890</span>
+                            <span className="text-secondary"><a href="tel:+911234567890">Call: + 0123 456 7890</a></span>
                         </div>
                         <div className="d-flex align-items-center justify-content-center ms-4 ">
                             <a href="#!" onClick={(e) => e.preventDefault()}><i className="bi bi-search text-white fa-2x"></i> </a>

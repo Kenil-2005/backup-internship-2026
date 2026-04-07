@@ -1,26 +1,27 @@
 import React from 'react'
-import About from './AboutSection/About'
 import Hero from './HeroSection/Hero'
-// import FactCheck from './FactSection/FactCheck'
-import Services from './ServicesSection/Services'
-import Project from './ProjectSection/Project'
-import Blog from './BlogSection/Blog'
-import Team from './TeamSection/Team'
-import Testimonial from './TestimonialSection/Testimonial'
-import Contact from './ContactSection/Contact'
+import FactCheck from './FactSection/FactCheck'
+import ServicesDetails from './ServicesSection/ServicesDetails'
+import AboutDetails from './AboutSection/AboutDetails'
+import ProjectDetails from './ProjectSection/ProjectDetails'
+import ContactDetails from './ContactSection/ContactDetails'
+import BlogDetails from './BlogSection/BlogDetails'
+import TeamDetails from './TeamSection/TeamDetails'
+import TestimonialDetails from './TestimonialSection/TestimonialDetails'
 
 const Home = () => {
+
     return (
         <>
             <Hero />
-            {/* <FactCheck /> */}
-            <About />
-            <Services />
-            <Project />
-            <Blog />
-            <Team />
-            <Testimonial />
-            <Contact />
+            <FactCheck />
+            <AboutDetails />
+            <ServicesDetails />
+            <ProjectDetails />
+            <BlogDetails />
+            <TeamDetails />
+            <TestimonialDetails />
+            <ContactDetails />
         </>
     )
 }

@@ -20,10 +20,10 @@ const TopBar = () => {
                     <div id="note" className="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
                 </div>
                 <div className="icon-wrap">
-                    <a href="!#" onClick={(e) => e.preventDefault()} className="bg-light nav-fill btn btn-sm-square rounded-circle"><i className="fab fa-facebook-f text-primary"></i></a>
-                    <a href="!#" onClick={(e) => e.preventDefault()} className="bg-light nav-fill btn btn-sm-square rounded-circle"><i className="fab fa-twitter text-primary"></i></a>
-                    <a href="!#" onClick={(e) => e.preventDefault()} className="bg-light nav-fill btn btn-sm-square rounded-circle"><i className="fab fa-instagram text-primary"></i></a>
-                    <a href="!#" onClick={(e) => e.preventDefault()} className="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i className="fab fa-linkedin-in text-primary"></i></a>
+                    <a href="https://www.facebook.com/" className="nav-fill btn btn-sm-square rounded-circle"><i className="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://www.twitter.com/" className="nav-fill btn btn-sm-square rounded-circle"><i className="fab fa-twitter text-primary"></i></a>
+                    <a href="https://www.instagram.com/" className="nav-fill btn btn-sm-square rounded-circle"><i className="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.linkdin.com/" className="nav-fill btn btn-sm-square rounded-circle me-0"><i className="fab fa-linkedin-in text-primary"></i></a>
                 </div>
             </div>
         </div>

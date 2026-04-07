@@ -1,27 +1,18 @@
 import React from 'react'
-import ProjectData from './ProjectData'
-import ProjectCard from './ProjectCard'
+import BreadCrumb from '../BreadCrumb'
+import ProjectDetails from './ProjectDetails';
+import FactCheck from '../FactSection/FactCheck';
+
+
 
 const Project = () => {
     return (
-        <div className='container-fluid mb-5 py-5 project-wrapper'>
-            <div className="container">
-                <div className="text-center mx-auto pb-5" data-aos="fade-up" data-aos-delay="300" style={{ maxWidth: "600px" }}>
-                    <h5 className="text-primary">Our Project</h5>
-                    <h1>Our Recently Completed Projects</h1>
-                </div>
-                <div className="row g-5">
-                    {ProjectData.map((project) => {
-                        return (
-                            <ProjectCard
-                                key={project.id}
-                                {...project}
-                            />
-                        )
-                    })}
-                </div>
-            </div>
-        </div>
+        <>
+            <BreadCrumb title={"Projects"} desc={"Projects"} />
+            <FactCheck />
+            <ProjectDetails />
+
+        </>
     )
 }
 

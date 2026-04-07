@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import FactCheck from '../FactSection/FactCheck';
+import BreadCrumb from '../BreadCrumb';
+import ContactDetails from './ContactDetails';
 
 const Contact = () => {
     return (
-        <div>
+        <>
+            <BreadCrumb title={"Contact Us"} desc={"Contact"} />
+            <FactCheck />
+            <ContactDetails />
+        </>
 
-        </div>
     )
 }
 
