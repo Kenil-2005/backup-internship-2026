@@ -7,7 +7,7 @@ const App = () => {
             <Count />
             <User />
         </>
-    )
-}
+    );
+};
 
 export default App;

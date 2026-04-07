@@ -1,6 +1,6 @@
-import React from 'react';
-import Todo from './Components/Todo/Todo';
-import './App.css';
+import React from "react";
+import Todo from "./Components/Todo/Todo";
+import "./App.css";
 
 const App = () => {
     return (
@@ -8,6 +8,6 @@ const App = () => {
             <Todo />
         </div>
     );
-}
+};
 
 export default App;

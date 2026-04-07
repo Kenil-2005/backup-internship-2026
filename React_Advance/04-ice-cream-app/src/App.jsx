@@ -1,11 +1,11 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import useIceCreamStore from './App/IceCreamStore';
-import StepOne from './Components/StepOne';
-import StepTwo from './Components/StepTwo';
-import StepThree from './Components/StepThree';
-import './App.css';
-import StepFour from './Components/StepFour';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import useIceCreamStore from "./App/IceCreamStore";
+import StepOne from "./Components/StepOne";
+import StepTwo from "./Components/StepTwo";
+import StepThree from "./Components/StepThree";
+import "./App.css";
+import StepFour from "./Components/StepFour";
 
 const App = () => {
 
@@ -28,6 +28,6 @@ const App = () => {
             </div>
         </div>
     );
-}
+};
 
 export default App;

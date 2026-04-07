@@ -1,5 +1,5 @@
-import React from 'react'
-import useIceCreamStore from '../App/IceCreamStore';
+import React from "react";
+import useIceCreamStore from "../App/IceCreamStore";
 
 const StepFour = () => {
 
@@ -11,13 +11,13 @@ const StepFour = () => {
 
     const handlePrev = () => {
         updateStore("step", 3);
-    }
+    };
 
     const handleNext = () => {
         localStorage.clear();
         resetStore();
         updateStore("step", 1);
-    }
+    };
 
     let sum = (store.base?.price || 0) + (store.type?.price || 0);
 
@@ -61,7 +61,7 @@ const StepFour = () => {
                                             <p>{item.label}</p>
                                             <p><span>&#8377;</span>{item.price}</p>
                                         </div>
-                                    )
+                                    );
                                 })
                             }
                         </div>
@@ -105,7 +105,7 @@ const StepFour = () => {
                 </button>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default StepFour
+export default StepFour;

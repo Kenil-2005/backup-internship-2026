@@ -1,6 +1,6 @@
-import React from 'react';
-import Card from './Card';
-import useIceCreamStore from '../App/IceCreamStore';
+import React from "react";
+import Card from "./Card";
+import useIceCreamStore from "../App/IceCreamStore";
 
 
 const StepTwo = () => {
@@ -8,10 +8,10 @@ const StepTwo = () => {
 
     const handlePrev = () => {
         updateStore("step", 1);
-    }
+    };
     const handleNext = () => {
         updateStore("step", 3);
-    }
+    };
     return (
         <div>
             <div className="option-wrap">
@@ -33,6 +33,6 @@ const StepTwo = () => {
             </div>
         </div>
     );
-}
+};
 
 export default StepTwo;

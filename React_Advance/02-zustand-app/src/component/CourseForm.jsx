@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import useCourseStore from '../App/CourseStore';
+import React, { useState } from "react";
+import useCourseStore from "../App/CourseStore";
 
 const CourseForm = () => {
 
@@ -16,7 +16,7 @@ const CourseForm = () => {
             completed: false,
         });
         setCourseTitle("");
-    }
+    };
 
     return (
         <>
@@ -27,13 +27,13 @@ const CourseForm = () => {
                     onChange={(e) => setCourseTitle(e.target.value)}
                 />
                 <button
-                    onClick={() => { handleCourseSubmit() }}
+                    onClick={() => { handleCourseSubmit(); }}
                     className='primary-btn'>
                     Add course
                 </button>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default CourseForm;

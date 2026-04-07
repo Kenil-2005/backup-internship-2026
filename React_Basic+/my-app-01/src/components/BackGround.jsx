@@ -7,6 +7,6 @@ const BackGround =()=>{
             <div className="overlay"></div>
         </>
     );
-}
+};
 
 export default BackGround;

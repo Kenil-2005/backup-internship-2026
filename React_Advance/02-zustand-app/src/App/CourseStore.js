@@ -1,5 +1,5 @@
-import { create } from 'zustand';
-import { devtools, persist } from 'zustand/middleware'
+import { create } from "zustand";
+import { devtools, persist } from "zustand/middleware";
 
 const courseStore = (set) => ({
     courses: [],
@@ -29,6 +29,6 @@ const useCourseStore = create(
             name: "courses",
         })
     )
-)
+);
 
 export default useCourseStore;

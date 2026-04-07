@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class RightSection extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             plan: "",
             name: "",
@@ -10,7 +10,7 @@ class RightSection extends Component {
             email: "",
             errors: {}
         };
-        console.log('Constructor: Initializes state');
+        console.log("Constructor: Initializes state");
     }
 
     componentDidMount() {
@@ -82,7 +82,7 @@ class RightSection extends Component {
                 [name]: error
             }
         }));
-    }
+    };
 
     validate = () => {
         let newErrors = {};

@@ -1,11 +1,11 @@
-import { create } from 'zustand';
-import { devtools, persist } from 'zustand/middleware';
+import { create } from "zustand";
+import { devtools, persist } from "zustand/middleware";
 
 const iceCreamStore = (set) => ({
     stores: {
-        base: '',
+        base: "",
         topping: [],
-        type: '',
+        type: "",
         step: 1
     },
     updateStore: (key, value) => {
@@ -33,7 +33,7 @@ const iceCreamStore = (set) => ({
                 };
             }
         }
-        )
+        );
     },
     resetStore: () => {
         set({
@@ -53,7 +53,7 @@ const useIceCreamStore = create(
             name: "courses",
         })
     )
-)
+);
 
 
 

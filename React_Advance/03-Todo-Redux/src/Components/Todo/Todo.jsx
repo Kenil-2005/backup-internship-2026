@@ -1,5 +1,5 @@
-import TodoAdd from './TodoAdd';
-import TodoList from './TodoList';
+import TodoAdd from "./TodoAdd";
+import TodoList from "./TodoList";
 
 const Todo = () => {
    
@@ -10,6 +10,6 @@ const Todo = () => {
             <TodoList />
         </div>
     );
-}
+};
 
 export default Todo;

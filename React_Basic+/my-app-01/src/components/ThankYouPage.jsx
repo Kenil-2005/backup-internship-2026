@@ -14,6 +14,6 @@ const ThankYouPage =()=>{
             </div>
         </div>
     );
-}
+};
 
 export default ThankYouPage;

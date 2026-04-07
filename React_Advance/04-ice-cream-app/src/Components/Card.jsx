@@ -1,5 +1,5 @@
-import data from '../assets/json/data';
-import useIceCreamStore from '../App/IceCreamStore';
+import data from "../assets/json/data";
+import useIceCreamStore from "../App/IceCreamStore";
 
 const Card = ({ stepType }) => {
 
@@ -39,12 +39,12 @@ const Card = ({ stepType }) => {
                                     </div>
                                 </label>
                             </div>
-                        )
+                        );
                     })
                 }
             </div>
         </>
     );
-}
+};
 
 export default Card;

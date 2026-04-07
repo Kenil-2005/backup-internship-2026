@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
-import { logIn, logOut } from '../Redux/UserSlice';
-import React from 'react'
+import { logIn, logOut } from "../Redux/UserSlice";
+import React from "react";
 import { useState } from "react";
 
 const User = () => {
@@ -22,11 +22,11 @@ const User = () => {
             }));
             setName("");
             setEmail("");
-            setError("")
+            setError("");
         } else {
             setError("Enter All Details");
         }
-    }
+    };
 
     return (
         <div
@@ -44,7 +44,7 @@ const User = () => {
                         <p>{user.email}</p>
 
                         <button
-                            onClick={() => { dispatch(logOut()) }}>
+                            onClick={() => { dispatch(logOut()); }}>
                             Log Out
                         </button>
                     </>
@@ -53,7 +53,7 @@ const User = () => {
                     <input
                         type="name"
                         value={name}
-                        onChange={(e) => { setName(e.target.value) }}
+                        onChange={(e) => { setName(e.target.value); }}
                         placeholder="Enter Your Name"
                         style={{
                             display: "block",
@@ -63,7 +63,7 @@ const User = () => {
                     <input
                         type="email"
                         value={email}
-                        onChange={(e) => { setEmail(e.target.value) }}
+                        onChange={(e) => { setEmail(e.target.value); }}
                         placeholder="Enter Your Email"
                         style={{
                             display: "block",
@@ -95,7 +95,7 @@ const User = () => {
                 </>)
             }
         </div>
-    )
-}
+    );
+};
 
-export default User
+export default User;

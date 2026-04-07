@@ -12,7 +12,7 @@ class Car extends Component {
 
     increment = ()=>{
         this.setState({Count: this.state.count + 1});
-    }
+    };
 
     render(){
         return (
@@ -23,7 +23,7 @@ class Car extends Component {
                 </p>
                 <button onClick={this.increment}>Increment</button>
             </div>
-        )
+        );
     }
 }
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import useCourseStore from '../App/CourseStore'
+import React from "react";
+import useCourseStore from "../App/CourseStore";
 
 const CourseList = () => {
 
@@ -14,7 +14,7 @@ const CourseList = () => {
                     return (
                         <li
                             key={i}
-                            className={'course-item'}
+                            className={"course-item"}
                             style={{
                                 backgroundColor: course.completed ? "#00ff00" : "#fff",
                             }}
@@ -38,11 +38,11 @@ const CourseList = () => {
                                 Remove
                             </button>
                         </li>
-                    )
+                    );
                 })}
             </ul>
         </div>
-    )
-}
+    );
+};
 
-export default CourseList
+export default CourseList;

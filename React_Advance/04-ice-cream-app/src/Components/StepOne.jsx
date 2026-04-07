@@ -1,6 +1,6 @@
-import React from 'react';
-import useIceCreamStore from '../App/IceCreamStore';
-import Card from './Card';
+import React from "react";
+import useIceCreamStore from "../App/IceCreamStore";
+import Card from "./Card";
 
 const StepOne = () => {
 
@@ -8,7 +8,7 @@ const StepOne = () => {
 
     const handleNext = () => {
         updateStore("step", 2);
-    }
+    };
 
     return (
         <div>
@@ -25,6 +25,6 @@ const StepOne = () => {
             </div>
         </div>
     );
-}
+};
 
 export default StepOne;

@@ -1,6 +1,6 @@
-import React from 'react';
-import { useSelector, useDispatch } from "react-redux"
-import { removeTodo } from "../../App/TodoSlice"
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { removeTodo } from "../../App/TodoSlice";
 
 const TodoList = () => {
 
@@ -26,6 +26,6 @@ const TodoList = () => {
             })}
         </ul>
     );
-}
+};
 
 export default TodoList;

@@ -1,5 +1,5 @@
-import Greeting from '../public/components/FunctionComponent';
-import Car from '../public/components/ClassComponent';
+import Greeting from "../public/components/FunctionComponent";
+import Car from "../public/components/ClassComponent";
 
 // import './App.css'
 
@@ -11,7 +11,7 @@ function App() {
 
         <Car model="Mustang"/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

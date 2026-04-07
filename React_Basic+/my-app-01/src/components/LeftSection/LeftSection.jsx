@@ -40,6 +40,6 @@ const LeftSection =()=>{
             </div>
         </div>
     );
-}
+};
 
 export default LeftSection;

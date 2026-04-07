@@ -1,6 +1,6 @@
-import React from 'react';
-import Card from './Card';
-import useIceCreamStore from '../App/IceCreamStore';
+import React from "react";
+import Card from "./Card";
+import useIceCreamStore from "../App/IceCreamStore";
 
 
 
@@ -10,10 +10,10 @@ const StepThree = () => {
 
     const handlePrev = () => {
         updateStore("step", 2);
-    }
+    };
     const handleNext = () => {
         updateStore("step", 4);
-    }
+    };
 
     return (
         <div>
@@ -36,6 +36,6 @@ const StepThree = () => {
             </div>
         </div>
     );
-}
+};
 
 export default StepThree;

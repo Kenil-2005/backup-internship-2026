@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../../App/TodoSlice"
+import { addTodo } from "../../App/TodoSlice";
 
 const TodoAdd = () => {
     const [title, setTitle] = useState("");
@@ -21,11 +21,11 @@ const TodoAdd = () => {
 
             setTitle("");
             setDescription("");
-            setError('');
+            setError("");
         } else {
             setError("Fill all detail");
         }
-    }
+    };
     return (
         <div className="input-wrap">
             <input
@@ -48,11 +48,11 @@ const TodoAdd = () => {
             }
 
             <button
-                onClick={() => { handleAdd() }}>
+                onClick={() => { handleAdd(); }}>
                 ADD
             </button>
         </div>
     );
-}
+};
 
 export default TodoAdd;
