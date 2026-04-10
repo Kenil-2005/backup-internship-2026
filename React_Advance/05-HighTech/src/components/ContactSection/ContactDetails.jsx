@@ -27,7 +27,7 @@ const ContactDetails = () => {
             setEmailError("Email is Required");
             return false;
         }
-        else if (/\S+@\S+\.\S+/.test(email)) {
+        else if (!/\S+@\S+\.\S+/.test(email)) {
             setEmailError("Enter valid Email");
             return false;
         } else {
